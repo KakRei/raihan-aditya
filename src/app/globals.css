@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .nav-button {
+        @apply py-[15px] px-[30px] cursor-pointer hover:bg-[#303030] rounded-[60px] active:bg-[#613AFD] min-w-[125px] items-center justify-center text-center font-normal text-[15px];
+    }
+
+    .skills {
+        @apply text-[50px] backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] p-[5px];
+    }
+
+    .translate-skills-1 {
+        @apply translate-x-[-100px] translate-y-[50px];
+    }
+
+    .translate-skills-2 {
+        @apply translate-x-[-140px] translate-y-[-20px];
+    }
+
+    .translate-skills-3 {
+        @apply translate-x-[-160px] translate-y-[-80px];
+    }
+
+    .translate-skills-4 {
+        @apply translate-x-[160px] translate-y-[-80px];
+    }
+
+    .translate-skills-5 {
+        @apply translate-x-[140px] translate-y-[-20px];
+    }
+
+    .translate-skills-6 {
+        @apply translate-x-[100px] translate-y-[50px];
+    }
+}
+
+.flex-show {
+    display: flex !important
+}
+
+.hidden-show {
+    display: hidden;
+}
