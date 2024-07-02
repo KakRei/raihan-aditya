@@ -102,8 +102,8 @@ export default function App() {
         </section>
         <About />
         <Project/>
+        <Footer/>
       </main>
-      <Footer/>
     </>
   )
 }
