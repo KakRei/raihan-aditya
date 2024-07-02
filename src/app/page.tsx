@@ -33,7 +33,6 @@ export default function App() {
     let hoverArrowHidden = hover ? ' opacity-[0] translate-x-[60px]' : 'opacity-[1] translate-x-[60px]';
 
   return (
-    <>
       <main className="scroll-smooth transition-all max-w-[1280px] overflow-x-hidden">
         <Header/>
         <section className="max-h-[70vh] bg-[#fff] w-[1280px] overflow-y-hidden overflow-x-hidden">
@@ -104,6 +103,5 @@ export default function App() {
         <Project/>
         <Footer/>
       </main>
-    </>
   )
 }

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @layer components {
     .nav-button {
         @apply py-[15px] px-[30px] cursor-pointer hover:bg-[#303030] rounded-[60px] active:bg-[#613AFD] min-w-[125px] items-center justify-center text-center font-normal text-[15px];
