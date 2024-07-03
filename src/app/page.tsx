@@ -24,7 +24,7 @@ export default function App() {
     let addFlexD = show ? 'translate-skills-4': '';
     let addFlexE = show ? 'translate-skills-5': '';
     let addFlexF = show ? 'translate-skills-6': '';
-    let showHeader = show ? 'translate-y-[-200px]' : '';
+    let showHeader = show ? 'translate-y-[-260px]' : '';
     let showName = show ? 'translate-y-[400px]' : '';
     
     let hoverBg = hover ? 'bg-[#613AFD] pl-[20px] pr-[40px] py-[5px]' : 'px-[10px] py-[1px] bg-transparent';
@@ -33,11 +33,11 @@ export default function App() {
     let hoverArrowHidden = hover ? ' opacity-[0] translate-x-[60px]' : 'opacity-[1] translate-x-[60px]';
 
   return (
-      <main className="scroll-smooth transition-all max-w-[1280px] overflow-x-hidden">
+    <>
         <Header/>
-        <section className="max-h-[70vh] bg-[#fff] w-[1280px] overflow-y-hidden overflow-x-hidden">
-          <div className={`relative flex flex-col justify-center items-center h-auto text-center mt-[40px] ${showName} transition duration-300 ease-in-out`}>
-            <Image className="absolute right-[45%] top-[-10%]" src={"/vec1.svg"} alt="vector" width={27.5} height={28.5}></Image>
+        <section className="h-[500px] bg-[#fff] max-w-[1280px] overflow-y-hidden overflow-x-hidden w-[100vw] flex flex-col justify-end items-center">
+          <div className={`relative flex flex-col justify-center items-center h-fit text-center ${showName} transition duration-300 ease-in-out`}>
+            <Image className="absolute right-[115px] top-[-20px]" src={"/vec1.svg"} alt="vector" width={27.5} height={28.5}></Image>
             <h2 className="rounded-[50px] border-[1px] border-[#000] px-[15px] py-[2px]">
               Hello!
             </h2>
@@ -46,7 +46,7 @@ export default function App() {
               <span className="text-[#613AFD]"> Raihan</span>
               , Web Developer
             </h1>
-            <Image className="absolute rotate-180 bottom-[-25%] left-[32%]" src={"/vec1.svg"} alt="vector" width={71} height={78}></Image>
+            <Image className="absolute rotate-180 bottom-[-50px] left-[-50px]" src={"/vec1.svg"} alt="vector" width={71} height={78}></Image>
           </div>
 
           {/* <div className="flex justify-between items-center text-center">
@@ -61,13 +61,13 @@ export default function App() {
             </div>
           </div> */}
           
-          <div className="relative flex justify-center items-center h-auto w-auto ">
-            <div className="relative bg-[#9773FE] rounded-t-full w-fit h-fit pt-[270px] px-[210px] flex items-center justify-center z-[10]" onMouseEnter={toggleShow} onMouseLeave={toggleShow}>
-              <Image src={'/me.png'} alt="me" width={230} height={1} className="absolute bottom-[1px]"></Image>
+          <div className="relative flex justify-center items-center h-fit w-fit mt-[80px]">
+            <div className="relative bg-[#9773FE] rounded-t-full h-[230px] w-[430px] flex items-center justify-center z-[10]" onMouseEnter={toggleShow} onMouseLeave={toggleShow}>
+              <Image src={'/me.png'} alt="me" width={220} height={1} className="absolute bottom-[1px]"></Image>
             
               {/* Bottom nav */}
-              <div className="w-[260px] backdrop-blur-[25px] bg-[rgba(255,255,255,.1)] rounded-[50px] absolute bottom-[23%] border-[.1px] border-[rgba(255,255,255,.5)] z-[1]">
-                <ul className="flex items-center justify-center m-[4px] max-w-[100%]">
+              <div className="w-fit backdrop-blur-[25px] bg-[rgba(255,255,255,.1)] rounded-[50px] absolute bottom-[23%] border-[.1px] border-[rgba(255,255,255,.5)] z-[1]">
+                <ul className="flex items-center justify-center m-[4px]">
                   <li className={`relative flex font-medium mx-[2.5px] text-[20px] text-[#fff] items-center justify-center float-start text-center rounded-[50px] border-[rgba(255,255,255,.5)] ${hoverBgHidden} overflow-hidden transition-all duration-[300ms] ease-in-out`}>
                     <h2>Resume</h2>
                     <span className={`text-[27px] text-center ${hoverArrowHidden} absolute transition mr-[10px] duration-[200ms]`}><FiArrowUpRight/></span>
@@ -97,11 +97,10 @@ export default function App() {
               </ul>
             </section>
           </div>
-
         </section>
-        <About />
-        <Project/>
-        <Footer/>
-      </main>
+      <About />
+      <Project/>
+      <Footer/>
+      </>
   )
 }

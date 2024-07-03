@@ -20,40 +20,60 @@ export default function Project() {
   let hoverTechA = hoverProjectA ? 'flex' : 'hidden';
 
   return (
-    <section className="h-[80vh] bg-[#fff]">
-      <div className="mx-[70px] my-[100px]">
+    <section className="h-[500px] bg-[#fff] flex justify-center items-center w-[100vw]">
+      <div className="flex flex-col max-w-[1280px]">
         <h2 className="text-[40px] font-semibold mb-[30px]">
           My <span className="text-[#613afd]">Portfolio</span>
         </h2>
 
         <div className="flex gap-[50px]">
           <div className="relative h-[300px] w-[500px] overflow-hidden bg-blue-400 flex justify-center items-center rounded-[20px]" onMouseEnter={toggleHoverProject} onMouseLeave={toggleHoverProject}>
-            <Image src={'/netflixclone.png'} alt="project" width={500} height={1} className={`${hoverBlur} transition-all`}></Image>
-            <div className={`absolute bottom-[1px] mb-[4px] ml-[4px] rounded-[20px] left-[1px] ${hoverBg} transition-all duration-[200]`}>
-              <h2 className="text-[#fff] font-bold text-[30px] mt-[10px] ml-[20px] mb-[10px]">Netflix clone</h2>
-              <div className={`${hoverTech} absolute right-[1px] top-[1px] mt-[10px] mr-[10px] text-[40px] gap-[5px]`}>
-                <RiHtml5Fill color="#E96228"/>
-                <RiCss3Fill color="#2862E9"/>
-                <RiJavascriptFill color="#F7E025"/>
+            <a href="https://netflix-clone-ra.vercel.app/" target="_blank">
+              <Image src={'/netflixclone.png'} alt="project" width={500} height={1} className={`${hoverBlur} transition-all`}></Image>
+              <div className={`absolute bottom-[1px] mb-[4px] ml-[4px] rounded-[20px] left-[1px] ${hoverBg} transition-all duration-[200]`}>
+                <h2 className="text-[#f5f5f5] font-bold text-[30px] mt-[10px] ml-[20px] mb-[10px]">Netflix clone</h2>
+                <div className={`${hoverTech} absolute right-[1px] top-[1px] mt-[10px] mr-[10px] text-[40px] gap-[5px]`}>
+                  <RiHtml5Fill color="#E96228"/>
+                  <RiCss3Fill color="#2862E9"/>
+                  <RiJavascriptFill color="#F7E025"/>
+                </div>
+                <p className={`text-[#fff] font-normal text-[15px] ml-[20px] mb-[10px] absolute ${hoverText}`}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis sapiente dicta.
+                </p>
               </div>
-              <p className={`text-[#fff] font-normal text-[15px] ml-[20px] mb-[10px] absolute ${hoverText}`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis sapiente dicta.
-              </p>
-            </div>
+            </a>
           </div>
           <div className="relative h-[300px] w-[500px] overflow-hidden bg-blue-400 flex justify-center items-center rounded-[20px]" onMouseEnter={toggleHoverProjectA} onMouseLeave={toggleHoverProjectA}>
-            <Image src={'/todolist.png'} alt="project" width={500} height={1} className={`${hoverBlurA} transition-all`}></Image>
-            <div className={`absolute bottom-[1px] mb-[4px] ml-[4px] rounded-[20px] left-[1px] ${hoverBgA} transition-all duration-[200]`}>
-              <h2 className="text-[#fff] font-bold text-[30px] mt-[10px] ml-[20px] mb-[10px]">Todolist</h2>
-              <div className={`${hoverTechA} absolute right-[1px] top-[1px] mt-[10px] mr-[10px] text-[40px] gap-[5px]`}>
-                <RiHtml5Fill color="#E96228"/>
-                <RiCss3Fill color="#2862E9"/>
-                <RiJavascriptFill color="#F7E025"/>
+            <a href="https://todo-list-ra.vercel.app/" target="_blank">
+              <Image src={'/todolist.png'} alt="project" width={500} height={1} className={`${hoverBlurA} transition-all`}></Image>
+              <div className={`absolute bottom-[1px] mb-[4px] ml-[4px] rounded-[20px] left-[1px] ${hoverBgA} transition-all duration-[200]`}>
+                <h2 className="text-[#f5f5f5] font-bold text-[30px] mt-[10px] ml-[20px] mb-[10px]">Todolist</h2>
+                <div className={`${hoverTechA} absolute right-[1px] top-[1px] mt-[10px] mr-[10px] text-[40px] gap-[5px]`}>
+                  <RiHtml5Fill color="#E96228"/>
+                  <RiCss3Fill color="#2862E9"/>
+                  <RiJavascriptFill color="#F7E025"/>
+                </div>
+                <p className={`text-[#fff] font-normal text-[15px] ml-[20px] mb-[10px] absolute ${hoverTextA}`}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis sapiente dicta.
+                </p>
               </div>
-              <p className={`text-[#fff] font-normal text-[15px] ml-[20px] mb-[10px] absolute ${hoverTextA}`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis sapiente dicta.
-              </p>
-            </div>
+            </a>
+          </div>
+          <div className="relative h-[300px] w-[500px] overflow-hidden bg-blue-400 flex justify-center items-center rounded-[20px]" onMouseEnter={toggleHoverProjectA} onMouseLeave={toggleHoverProjectA}>
+            <a href="https://todo-list-ra.vercel.app/" target="_blank">
+              <Image src={'/todolist.png'} alt="project" width={500} height={1} className={`${hoverBlurA} transition-all`}></Image>
+              <div className={`absolute bottom-[1px] mb-[4px] ml-[4px] rounded-[20px] left-[1px] ${hoverBgA} transition-all duration-[200]`}>
+                <h2 className="text-[#f5f5f5] font-bold text-[30px] mt-[10px] ml-[20px] mb-[10px]">Todolist</h2>
+                <div className={`${hoverTechA} absolute right-[1px] top-[1px] mt-[10px] mr-[10px] text-[40px] gap-[5px]`}>
+                  <RiHtml5Fill color="#E96228"/>
+                  <RiCss3Fill color="#2862E9"/>
+                  <RiJavascriptFill color="#F7E025"/>
+                </div>
+                <p className={`text-[#fff] font-normal text-[15px] ml-[20px] mb-[10px] absolute ${hoverTextA}`}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis sapiente dicta.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
